@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: "App",
+    data() {
+      return {};
+    },
+    created: function() {
+      console.log("vue入口", this, global);
+    }
+  };
 </script>
 
 <style>
